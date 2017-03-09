@@ -51,7 +51,9 @@ export default class example extends Component
 						<Image
 							source={{uri: "https://images.unsplash.com/photo-1433888104365-77d8043c9615?dpr=2&auto=format&fit=crop&w=767&h=510&q=80&cs=tinysrgb&crop="}}
 							style={{width: 300, height: 300}}
-							onLoadEnd={() => this.setState({doneFirst: true})}/>
+							onLoadEnd={() => {
+							setTimeout(() => this.setState({doneFirst: true}), 3000)
+							}}/>
 
 					</RNPlaceholder>
 				</View>
@@ -66,7 +68,9 @@ export default class example extends Component
 						<Image
 						source={{uri: "https://images.unsplash.com/photo-1423034816855-245e5820ff8c?dpr=2&auto=format&fit=crop&w=767&h=1022&q=80&cs=tinysrgb&crop="}}
 						style={{width: 300, height: 300}}
-						onLoadEnd={() => this.setState({doneSecond: true})}/>
+						onLoadEnd={() => {
+							setTimeout(() => this.setState({doneSecond: true}), 2000)
+						}} />
 
 					</RNPlaceholder>
 				</View>

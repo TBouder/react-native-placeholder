@@ -4,7 +4,7 @@ You can not always remove the waiting time to get an information but you can mak
 This react-native module allows you to set a placeholder to render something while fetching the main component/element (example: when a remote image loads, when you are performing a GET request to your Database, etc.).   
 This placeholder design is based on the one on Facebook and is partly customisable.
 
-![Illustration](http://img4.hostingpics.net/pics/454140Capturedecran20170308a222914.png)
+![Illustration](http://i.giphy.com/l0IyaNPHDSMN1oHK0.gif)
 
 ###Fast Use :
 ```
@@ -31,3 +31,5 @@ state = {done: false}
    
 > The placeholder has two main "parts", the **Cube** (non editable for now) and the **Lines** (editables). With no specifics data, a basic component is set.   
 > The Done props has to be a state from the parents component that will switch to true at the end of the loading (for instance with the onLoadEnd method of the <Image> component).
+
+![Illustration](http://img4.hostingpics.net/pics/454140Capturedecran20170308a222914.png)
